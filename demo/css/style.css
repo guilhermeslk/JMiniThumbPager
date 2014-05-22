@@ -1,0 +1,62 @@
+body { 
+	margin: 30px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #F7F7F7;
+}
+
+ul
+{	padding: 0;
+    list-style-type: none;
+}
+
+.content {
+	padding-left: 220px;
+}
+
+.slider {
+	margin-right: 10px;
+	width: 180px; 
+	float: left;
+}
+
+.slider-image {
+	height: 100%;
+	width: 180px; 
+	border: 1px solid #000;
+}
+
+.mini-controls {
+	text-align: center;
+}
+
+.mini-btn {
+  background-color: #08c;
+  border-color: #08c;
+  color: #fff;
+}
+
+.mini-btn:disabled {
+  color: #D5D5D5;
+}
+.mini-btn:hover,
+.mini-btn:focus,
+.mini-btn:active,
+.mini-btn .active {
+  background-color: #0077b3;
+  border-color: #006699;
+}
+.mini-btn.disabled:hover,
+.mini-btn.disabled:focus,
+.mini-btn.disabled:active,
+.mini-btn.disabled.active,
+.mini-btn[disabled]:hover,
+.mini-btn[disabled]:focus,
+.mini-btn[disabled]:active,
+.mini-btn[disabled].active,
+fieldset[disabled] .mini-btn:hover,
+fieldset[disabled] .mini-btn:focus,
+fieldset[disabled] .mini-btn:active,
+fieldset[disabled] .mini-btn.active {
+  background-color: #08c;
+  border-color: #08c;
+}

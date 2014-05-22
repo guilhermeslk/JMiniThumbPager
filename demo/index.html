@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JMiniThumbPager Demo</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../dist/JMiniThumbPager.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".slider").JMiniThumbPager({
+                    prev: "&#60;",
+                    next: "&#62;",
+                });  
+
+                $("#btnGetActiveImage").click(function() {
+                    alert($(".slider").JMiniThumbPager("getActiveImage"));
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>JMiniThumbPager Demo</h1>
+            <hr/>
+            <div class="slider">
+                <ul>
+                    <li><img class="slider-image" src="img/pattern_1.png"></li>
+                    <li><img class="slider-image"  src="img/pattern_2.png"></li>
+                    <li><img class="slider-image" src="img/pattern_3.png"></li>
+                </ul>
+           </div>
+           <div class="content">
+                <h2>Subtle Patterns</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin pulvinar tincidunt. In quis quam ipsum. Suspendisse blandit odio ipsum, elementum convallis erat feugiat sit amet. In eget condimentum nisi. Quisque congue eleifend urna ac feugiat. Duis volutpat, nibh sed varius mollis, metus dui suscipit leo, ullamcorper scelerisque magna mi eget ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus orci neque, ultricies vel varius eu, faucibus eu arcu. Vivamus dui velit, malesuada non adipiscing eu, accumsan sed quam. In placerat accumsan justo ullamcorper condimentum. Suspendisse potenti. Fusce viverra, tortor ac dictum semper, sapien erat tincidunt ante, ac mollis tellus risus sed ligula.
+                </p>
+                <button id="btnGetActiveImage">getActiveImage</button>
+            </div>
+        </div>
+    </body>
+</html> 
+
